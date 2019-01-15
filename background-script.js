@@ -1,7 +1,7 @@
 ﻿// this background script is used to invoke desktopCapture API
 // to capture screen-MediaStream.
 
-var screenOptions = ['screen', 'window'];
+var screenOptions = ['screen', 'window', 'tab'];
 
 chrome.runtime.onConnect.addListener(function (port) {
     port.onMessage.addListener(portOnMessageHanlder);
